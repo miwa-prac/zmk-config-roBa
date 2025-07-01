@@ -83,10 +83,10 @@
 
         NUM {
             bindings = <
-&kp MINUS                &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp ASTERISK                                         &kp AMPERSAND  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp QUESTION      &kp BACKSLASH
-&kp EQUAL                &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS      &kp LC(LA(SLASH))      &kp UNDERSCORE  &kp PERCENT    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOLLAR        &kp HASH
-&mt LEFT_SHIFT NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &kp MINUS              &kp TILDE       &kp QUESTION   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES
-&trans                   &trans        &trans        &trans        &trans        &trans                 &trans          &trans                                                                        &kp PIPE
+&kp MINUS     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp ASTERISK                                         &kp AMPERSAND  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp QUESTION      &kp BACKSLASH
+&kp EQUAL     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS      &kp LC(LA(SLASH))      &kp UNDERSCORE  &kp PERCENT    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOLLAR        &kp HASH
+&kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &kp MINUS              &kp TILDE       &kp QUESTION   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES
+&trans        &trans        &trans        &trans        &trans        &trans                 &trans          &trans                                                                        &kp PIPE
             >;
         };
 
