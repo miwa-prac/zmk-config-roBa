@@ -75,7 +75,7 @@
             bindings = <
 &kp MINUS       &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_ASTERISK                            &kp AMPERSAND  &kp RIGHT_BRACE    &kp PIPE             &kp DOLLAR         &kp BACKSLASH
 &kp UNDERSCORE  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_PLUS      &kp SLASH      &kp UNDER  &kp PERCENT    &kp LS(NUMBER_8)   &kp LS(NUMBER_9)     &kp LESS_THAN      &kp GREATER_THAN
-&kp NUMBER_0    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD       &kp MINUS      &kp HASH   &kp QUESTION   &kp RIGHT_BRACKET  &kp LA(RIGHT_BRACE)  &kp LS(AMPERSAND)  &kp AT_SIGN
+&kp NUMBER_0    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD       &kp MINUS      &kp HASH   &kp QUESTION   &kp RIGHT_BRACKET  &kp LS(RIGHT_BRACE)  &kp LS(AMPERSAND)  &kp AT_SIGN
 &trans          &trans        &trans        &trans        &trans           &trans         &kp COLON  &kp SEMICOLON                                                             &kp PIPE
             >;
         };
