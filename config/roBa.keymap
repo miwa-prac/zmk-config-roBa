@@ -55,7 +55,7 @@
             bindings = <
 &kp Q         &kp W           &kp E           &kp R          &kp T                                                          &kp Y        &kp U  &kp I     &kp O     &kp P
 &kp A         &kp S           &kp D           &kp F          &kp G        &kp EXCLAMATION           &kp MINUS               &kp H        &kp J  &kp K     &lt 5 L   &kp COMMA
-&kp Z         &kp X           &kp C           &kp V          &kp B        &kp TAB                   &kp LEFT_BRACKET        &kp N        &kp M  &mkp MB1  &mkp MB2  &mkp MB3
+&kp Z         &kp X           &kp C           &kp V          &kp B        &kp TAB                   &kp AT_SIGN             &kp N        &kp M  &mkp MB1  &mkp MB2  &mkp MB3
 &kp LEFT_WIN  &kp LANGUAGE_1  &kp LANGUAGE_2  &kp BACKSPACE  &lt 2 SPACE  &mt LEFT_SHIFT ENTER      &mt LEFT_CONTROL ENTER  &lt 3 SPACE                             &mt LEFT_ALT LEFT_WIN
             >;
 
@@ -73,10 +73,10 @@
 
         NUM {
             bindings = <
-&kp MINUS       &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_ASTERISK                                    &kp AMPERSAND  &kp RIGHT_BRACE    &kp PIPE           &kp DOLLAR         &kp BACKSLASH
-&kp UNDERSCORE  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_PLUS      &kp SLASH      &kp UNDERSCORE     &kp PERCENT    &kp LS(NUMBER_8)   &kp LS(NUMBER_9)   &kp LESS_THAN      &kp GREATER_THAN
-&kp NUMBER_0    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD       &kp MINUS      &kp HASH           &kp QUESTION   &kp RIGHT_BRACKET  &kp LS(BACKSLASH)  &kp LS(AMPERSAND)  &kp AT_SIGN
-&trans          &trans        &trans        &trans        &trans           &trans         &kp LS(SEMICOLON)  &kp SEMICOLON                                                           &kp PIPE
+&kp MINUS     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_ASTERISK                                 &kp AMPERSAND  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR         &kp BACKSLASH
+&kp EQUAL     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_PLUS      &kp SLASH      &kp UNDERSCORE  &kp PERCENT    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LESS_THAN      &kp GREATER_THAN
+&kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD       &kp MINUS      &kp HASH        &kp QUESTION   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LS(AMPERSAND)  &kp AT_SIGN
+&trans        &trans        &trans        &trans        &trans           &trans         &kp COLON       &kp SEMICOLON                                                                  &kp PIPE
             >;
         };
 
