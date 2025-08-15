@@ -5,8 +5,10 @@
 
 &mt {
     flavor = "balanced";
-    quick-tap-ms = <0>;
+    quick-tap-ms = <100>;
 };
+
+&lt { require-prior-idle-ms = <200>; };
 
 / {
     combos {
@@ -64,7 +66,7 @@
         default_layer {
             bindings = <
 &kp Q         &kp W           &kp E           &kp R                   &kp T                                                          &kp Y        &kp U  &kp I     &kp O     &kp P
-&kp A         &kp S           &kp D           &kp F                   &kp G        &kp MINUS                 &kp DOT                 &kp H        &kp J  &kp K     &kp L     &kp COMMA
+&kp A         &kp S           &kp D           &kp F                   &kp G        &kp MINUS                 &kp DOT                 &kp H        &kp J  &kp K     &lt 5 L   &kp COMMA
 &kp Z         &kp X           &kp C           &kp V                   &kp B        &kp TAB                   &kp UNDER               &kp N        &kp M  &mkp MB1  &mkp MB2  &mkp MB3
 &kp LEFT_WIN  &kp LANGUAGE_1  &kp LANGUAGE_2  &mt LEFT_ALT BACKSPACE  &lt 2 SPACE  &mt LEFT_SHIFT ENTER      &mt LEFT_CONTROL ENTER  &lt 3 SPACE                             &lt 5 LEFT_WIN
             >;
