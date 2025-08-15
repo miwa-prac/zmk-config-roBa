@@ -83,10 +83,10 @@
 
         NUM {
             bindings = <
-&trans        &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9                                     &kp AMPERSAND  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR        &kp BACKSLASH
-&kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4   &kp NUMBER_5      &kp UNDERSCORE  &kp PERCENT    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LESS_THAN     &kp GREATER_THAN
-&trans        &kp MINUS     &kp KP_PLUS   &kp ASTERISK  &kp KP_DIVIDE  &kp KP_EQUAL      &kp HASH        &kp QUESTION   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES
-&trans        &trans        &trans        &trans        &trans         &trans            &kp COLON       &kp SEMICOLON                                                                 &kp PIPE
+&trans        &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9                                    &kp AMPERSAND  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR        &kp BACKSLASH
+&kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5      &kp UNDERSCORE  &kp PERCENT    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LESS_THAN     &kp GREATER_THAN
+&trans        &kp MINUS     &kp KP_PLUS   &kp ASTERISK  &kp SLASH     &kp KP_EQUAL      &kp HASH        &kp QUESTION   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES
+&trans        &trans        &trans        &trans        &trans        &trans            &kp COLON       &kp SEMICOLON                                                                 &kp PIPE
             >;
         };
 
