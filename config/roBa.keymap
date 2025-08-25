@@ -3,10 +3,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
-&mt {
-    flavor = "balanced";
-    quick-tap-ms = <100>;
-};
+&mt { flavor = "balanced"; };
 
 &lt { require-prior-idle-ms = <200>; };
 
@@ -85,19 +82,19 @@
 
         NUM {
             bindings = <
-&trans        &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9                                    &kp AMPERSAND  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR        &kp BACKSLASH
-&kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5      &kp UNDERSCORE  &kp PERCENT    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LESS_THAN     &kp GREATER_THAN
-&trans        &kp MINUS     &kp KP_PLUS   &kp ASTERISK  &kp SLASH     &kp EQUAL         &kp HASH        &kp QUESTION   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES
-&trans        &trans        &trans        &trans        &trans        &trans            &kp COLON       &kp SEMICOLON                                                                 &kp PIPE
+&kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9                                 &kp AMPERSAND  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR        &kp BACKSLASH
+&kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp DOT        &kp UNDERSCORE  &kp PERCENT    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LESS_THAN     &kp GREATER_THAN
+&trans        &kp MINUS     &kp KP_PLUS   &kp ASTERISK  &kp SLASH     &kp EQUAL      &kp HASH        &kp QUESTION   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES
+&trans        &trans        &trans        &trans        &trans        &trans         &kp COLON       &kp SEMICOLON                                                                 &kp PIPE
             >;
         };
 
         ARROW {
             bindings = <
-&trans  &trans  &trans  &trans                 &trans                                                                 &trans              &kp LC(LS(TAB))     &kp UP_ARROW    &kp LC(TAB)          &trans
-&trans  &trans  &trans  &trans                 &trans                &trans                                   &trans  &kp LG(LEFT_ARROW)  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT            &kp LG(RIGHT_ARROW)
-&trans  &trans  &trans  &trans                 &trans                &trans                                   &trans  &trans              &kp LA(LEFT_ARROW)  &trans          &kp LA(RIGHT_ARROW)  &trans
-&trans  &trans  &trans  &kp LS(LC(LESS_THAN))  &kp LS(LC(KP_SLASH))  &mt LEFT_SHIFT LS(LC(GREATER_THAN))      &trans  &trans                                                                       &trans
+&trans         &trans  &trans  &trans                 &trans                                                                 &trans              &kp LC(LS(TAB))     &kp UP_ARROW    &kp LC(TAB)          &trans
+&trans         &trans  &trans  &trans                 &trans                &trans                                   &trans  &kp LG(LEFT_ARROW)  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT            &kp LG(RIGHT_ARROW)
+&kp LS(LG(S))  &trans  &trans  &trans                 &trans                &trans                                   &trans  &trans              &kp LA(LEFT_ARROW)  &trans          &kp LA(RIGHT_ARROW)  &trans
+&trans         &trans  &trans  &kp LS(LC(LESS_THAN))  &kp LS(LC(KP_SLASH))  &mt LEFT_SHIFT LS(LC(GREATER_THAN))      &trans  &trans                                                                       &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -137,6 +134,15 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        arrow_under_num {
+            if-layers = <3>;
+            then-layer = <2>;
         };
     };
 };
