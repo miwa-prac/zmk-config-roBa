@@ -144,5 +144,10 @@
             if-layers = <3>;
             then-layer = <2>;
         };
+
+        num {
+            if-layers = <2>;
+            then-layer = <2>;
+        };
     };
 };
