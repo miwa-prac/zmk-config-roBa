@@ -38,11 +38,25 @@
     };
 
     macros {
-        to_layer_0: to_layer_0 {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+        connect_to_layer_0: to_layer_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 0 &to 0>;
             label = "TO_LAYER_0";
+        };
+
+        connect_to_layer_1: connect_to_layer_1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 1 &to 0>;
+            label = "CONNECT_TO_LAYER_1";
+        };
+
+        connect_to_layer_2: connect_to_layer_2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 2 &to 0>;
+            label = "CONNECT_TO_LAYER_2";
         };
     };
 
@@ -50,7 +64,7 @@
         lt_to_layer_0: lt_to_layer_0 {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_TO_0";
-            bindings = <&mo>, <&to_layer_0>;
+            bindings = <&mo>, <&connect_to_layer_0>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -60,7 +74,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        default_layer_win {
             bindings = <
 &kp Q         &kp W           &kp E           &kp R          &kp T                                                          &kp Y        &kp U  &kp I     &kp O     &kp P
 &kp A         &kp S           &kp D           &kp F          &kp G        &kp DOT                   &kp MINUS               &kp H        &kp J  &kp K     &lt 5 L   &kp COMMA
@@ -134,6 +148,17 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
+        };
+
+        default_layer_ipad {
+            bindings = <
+&kp Q             &kp W           &kp E           &kp R          &kp T                                                          &kp Y        &kp U  &kp I     &kp O     &kp P
+&kp A             &kp S           &kp D           &kp F          &kp G        &kp DOT                   &kp MINUS               &kp H        &kp J  &kp K     &lt 5 L   &kp COMMA
+&kp Z             &kp X           &kp C           &kp V          &kp B        &kp TAB                   &kp UNDER               &kp N        &kp M  &mkp MB1  &mkp MB2  &mkp MB3
+&kp LEFT_COMMAND  &kp LANGUAGE_1  &kp LANGUAGE_2  &kp BACKSPACE  &lt 2 SPACE  &mt LEFT_SHIFT ENTER      &mt LEFT_CONTROL ENTER  &lt 3 SPACE                             &mt ESCAPE LEFT_ALT
+            >;
+
+            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
     };
 
