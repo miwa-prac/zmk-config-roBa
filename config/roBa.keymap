@@ -7,6 +7,11 @@
 
 &lt { require-prior-idle-ms = <200>; };
 
+&trackball {
+    automouse-layer = <4>;
+    scroll-layers = <5>;
+};
+
 / {
     combos {
         compatible = "zmk,combos";
